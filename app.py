@@ -10,6 +10,8 @@ def find_facts():
     date = request_data['date']
     month = request_data['month']
 
-    response = requests.get('https://today.zenquotes.io/api/'+month+'/'+date)
+    # response = requests.get('https://today.zenquotes.io/api/'+month+'/'+date)
 
-    return jsonify(response.json())
+    # return jsonify(response.json())
+
+    return month+'/'+date
