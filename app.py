@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/getter', methods=['GET'])
 def find_facts():
-    # request_data = request.get_json()
+    request_data = request.get_json()
     # date = request_data['date']
     # month = request_data['month']
 
