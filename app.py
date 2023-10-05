@@ -14,5 +14,5 @@ def find_facts():
 
     # return jsonify(response.json())
 
-    return month+'/'+date
+    # return month+'/'+date
     return 'test get'
