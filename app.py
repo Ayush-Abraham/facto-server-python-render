@@ -4,7 +4,7 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/getter', methods=['GET'])
 def find_facts():
     request_data = request.get_json()
     date = request_data['date']
@@ -15,3 +15,4 @@ def find_facts():
     # return jsonify(response.json())
 
     return month+'/'+date
+    return 'test get'
